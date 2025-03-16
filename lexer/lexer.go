@@ -35,6 +35,18 @@ func (l *Lexer) NextToken() token.Token {
 		tok = token.Token{Type: token.ASSIGN, Literal: "="}
 	case '+':
 		tok = token.Token{Type: token.PLUS, Literal: "+"}
+	case '-':
+		tok = token.Token{Type: token.MINUS, Literal: "-"}
+	case '*':
+		tok = token.Token{Type: token.ASTERISK, Literal: "*"}
+	case '/':
+		tok = token.Token{Type: token.SLASH, Literal: "/"}
+	case '!':
+		tok = token.Token{Type: token.BANG, Literal: "!"}
+	case '>':
+		tok = token.Token{Type: token.GT, Literal: ">"}
+	case '<':
+		tok = token.Token{Type: token.LT, Literal: "<"}
 	case ';':
 		tok = token.Token{Type: token.SEMICOLON, Literal: ";"}
 	case '(':
