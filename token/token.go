@@ -32,6 +32,9 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
+	EQ    = "=="
+	NotEq = "!="
+
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 	TRUE     = "TRUE"
